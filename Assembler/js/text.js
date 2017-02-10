@@ -18,7 +18,7 @@ function out()
 		
 		var b=0;
 		
-		if(t=>10)
+		if(t>9)
 		{
 			while(t>0)
 			{
@@ -41,7 +41,7 @@ function out()
 			}
 		}
 		
-		
+		if(u<10){
 			if(u==q)
 			{
 				
@@ -52,10 +52,38 @@ function out()
 				document.getElementById("demo").innerHTML="Number is not a lucky number"+"<br>"+"<br>"+"Lucky Number is:"+u;
 			}
 				
+		}
+		if(u>9)
+		{
+			var f1 = add(u);
+			
+			if(f1==q)
+			{
+				
+				document.getElementById("demo").innerHTML="Number is a lucky number"+"<br>";
+			}
+			else
+			{
+				document.getElementById("demo").innerHTML="Number is not a lucky number"+"<br>"+"<br>"+"Lucky Number is:"+f1;
+			}
 		
 		
+		
+		
+		}
 		
 		
 		
 	}
+	
+	function add(num)
+{
+	var sum=0;
+	while(num>0)
+	{
+		sum=sum+(num%10);
+		num=Math.floor(num/10);
+	}
+	return sum;
+}
 	
