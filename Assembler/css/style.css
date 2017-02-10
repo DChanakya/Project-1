@@ -185,8 +185,16 @@ body{
 .modal-body{
 	word-wrap: break-word;
 }
-
 .modal-content{
 	background-image:url("../images/modal.jpg");
 	    background-size: 100% auto;
+		color: #000000;
+	font-weight:900;
+		text-align:center;
+
+}
+#demo1{
+	color: #000000;
+	font-weight:900;
+	text-align:center;
 }
