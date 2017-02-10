@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <meta charset="UTF-8">
+  
+  <title>Lucky Number</title>
+  
+  <!-------------------------------------- Imported CSS --------------------------------------------------------->
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/normalize_min.css">
+  <link rel="stylesheet" href="css/bootstrap_min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="form">
+  
+      <!------------- Code for Tab display --------------------------->
+  
+	  <ul class="tab-group">
+        <li class="tab active"><a href="#check">Check if Lucky number</a></li>
+        <li class="tab"><a href="#display">Display Lucky Numbers</a></li>
+      </ul>
+      
+	  <!------------- End of Tab display ----------------------------->
+      
+	  <div class="tab-content">
+      
+	  <!------------ Code to check if lucky number ------------------> 
+
+	  <div id="check">   
+
+	  <!------------ Code for form to enter Number ------------------>     
+
+	  <h1>Check if Lucky number</h1>
+          
+          <form  id="form1">
+          <div class="field-wrap">
+		  <label>
+              Enter the Number <span class="req">(number)</span>
+            </label>
+            <input name="b1" type="value">
+			</form>
+          </div>
+
+		  <!----------- Code for form to enter Lucky number -------------->
+
+		  <form  id="form2">
+          <br>
+		  <div class="field-wrap">
+            <label>
+              Enter the Lucky Number <span class="req">(number)</span>
+            </label>
+			<input name="b2" type="value">
+			</form>
+			</div>
+			<br>
+
+			<!----------- Submit button and display area -------------------->  
+
+			<button class="button button-block" onclick="out()" id="demo" >Submit</button>
+			  
+			  </div>
+        
+		<!------------ End of Checking -------------------------------->
+
+		<!------------ Code to display all lucky numbers--------------->
+
+        <div id="display">   
+		 <h1>Display Lucky Numbers</h1>
+
+		 <!------------ Form to enter lower limit ---------------------->  
+
+		 <form  id="form3">
+          <div class="field-wrap">
+		  <label>
+              Enter the Lower Limit <span class="req">(number)</span>
+            </label>
+            <input name="b3" type="value">
+			</form>
+          </div>
+		  
+		<!------------ Form to enter Upper Limit ---------------------->  
+		  
+		  <form  id="form4">
+          <div class="field-wrap">
+		  <label>
+              Enter the Upper limit <span class="req">(number)</span>
+            </label>
+            <input name="b4" type="value">
+			</form>
+          </div>
+		  
+		 <!------------ Form to enter the Lucky Number------------------> 
+		  
+           <form  id="form5">
+          
+		  <div class="field-wrap">
+            <label>
+              Enter the Lucky Number <span class="req">(number)</span>
+            </label>
+			<input name="b5" type="value">
+			</form>
+			</div>
+			<br>
+
+		 <!------------ Submit button and display popup------------------->
+		 
+              <button type="button" class="button button-block" onclick="cal()"  data-toggle="modal" data-target="#myModal" >Submit</button>
+		
+		 <!------------ Modal to display result -------------------------->
+		
+			  <div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+		 <!------------ Modal content ------------------------------------->
+
+		 <div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Number List</h4>
+				</div>
+			<div class="modal-body">
+				<p id="demo1"></p>
+			</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+
+			</div>
+		</div>
+
+			
+        </div>
+        
+		<!------------ End of code to display Lucky numbers------------------->
+		
+      </div>
+      
+</div> 
+  
+ <!------------------------------Imported Java script ---------------------------------------> 
+  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+	<script src="js/text.js"></script>
+	<script src="js/text1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>
+
+<!----------------------------------------------- End of the HTML ------------------------------------------------------------>
