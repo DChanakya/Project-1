@@ -185,8 +185,8 @@ body{
 .modal-body{
 	word-wrap: break-word;
 }
+
 .modal-content{
 	background-image:url("../Lottery-balls.jpg");
 	    background-size: 100% auto;
-
 }

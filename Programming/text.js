@@ -1,6 +1,10 @@
 function out()
 	{
 		var x,y,p,q,z;
+		x=document.getElementById("form1");
+		y=document.getElementById("form2");
+		p=x.elements["b1"].value;
+		q=y.elements["b2"].value;
 			
 		
 		var s=0;
@@ -29,11 +33,11 @@ function out()
 			if(t==q)
 			{
 				
-				
+				document.getElementById("demo").innerHTML="Number is a lucky number"+"<br>";
 			}
 			else
 			{
-				
+				document.getElementById("demo").innerHTML="Number is not a lucky number"+"<br>"+"Lucky Number is:"+t;
 			}
 		}
 		
@@ -41,11 +45,12 @@ function out()
 			if(u==q)
 			{
 				
-				
+				document.getElementById("demo").innerHTML="Number is a lucky number"+"<br>";
 			}
 			else
 			{
-						}
+				document.getElementById("demo").innerHTML="Number is not a lucky number"+"<br>"+"<br>"+"Lucky Number is:"+u;
+			}
 				
 		
 		
