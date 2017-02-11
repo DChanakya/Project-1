@@ -186,21 +186,27 @@ body{
 	word-wrap: break-word;
 }
 .modal-content{
-	background-image:url("../images/pop.jpg");
+	background-image:url("../images/m.jpg");
+	/*background-color:#d7f442;*/
 	    background-size: 100% auto;
-		color: #000000;
+		color:  #ffffff
+;
 	font-weight:900;
 		text-align:center;
-
+		font-size:large;
+		
 }
 #demo1{
-	color: #000000;
+	color:  #ffffff
+;
 	font-weight:900;
 	text-align:center;
+	font-size:large;
 }
 
 h1{
 	font-family: "Times New Roman", Times, serif;
 	font-style:italic;
 	font-weight:900;
+	
 }
