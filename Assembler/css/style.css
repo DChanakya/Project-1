@@ -186,7 +186,7 @@ body{
 	word-wrap: break-word;
 }
 .modal-content{
-	background-image:url("../images/modal.jpg");
+	background-image:url("../images/pop.jpg");
 	    background-size: 100% auto;
 		color: #000000;
 	font-weight:900;
@@ -197,4 +197,10 @@ body{
 	color: #000000;
 	font-weight:900;
 	text-align:center;
+}
+
+h1{
+	font-family: "Times New Roman", Times, serif;
+	font-style:italic;
+	font-weight:900;
 }
