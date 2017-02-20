@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucky Number</title>
+	
+	<!--                  Imported CSS                             -->
+    
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/pop.css">
+	<link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  </head>
+
+  <body>
+  
+	<header id="header" role="banner">		
+		<div class="main-nav">
+			<div class="container">
+				<div class="header-top">
+					
+				</div>     
+		        <div class="row">	        		
+		            <div class="navbar-header">
+		                
+		                <a class="navbar-brand" href="#"><div class="animated bounceIn" style="animation-iteration-count: infinite;animation-duration: 4s" >Lucky Number</div>
+		                	
+		                </a>     
+				
+		            </div>
+						
+		            <div class="collapse navbar-collapse">
+					
+		                <ul class="nav navbar-nav navbar-right">  
+							<li><h4>Backgrounds-></h4></li>
+		                   <li>
+	  	  <select class="effects center" id="ef" >
+            <option value="bouncingBalls">bouncingBalls</option>
+            <option value="starfield">starfield</option>
+            <option value="squareFlash">squareFlash</option>
+            <option value="vortex">vortex</option>
+            <option value="shootingLines">shootingLines</option>
+            <option value="simpleGradient">simpleGradient</option>
+            <option value="layeredTriangles">layeredTriangles</option>
+            <option value="cornerSpikes">cornerSpikes</option>
+            <option value="floatingBoxes">floatingBoxes</option>
+          </select> </li>
+		                </ul>
+		            </div>
+		        </div>
+	        </div>
+        </div>                    
+    </header>
+    <div id="Wrapper">
+	
+		
+		<div class="animated fadeInRights" >
+		
+		<!-- <div id="spin"> -->
+         <div class="form">
+  
+      <!------------- Code for Tab display --------------------------->
+  
+	  <ul class="tab-group">
+      <div class="animated fadeInLeft"  >  
+		<li class="tab active"><a href="#check">Check if Lucky number</a></li></div>
+       <div class="animated fadeInRight"  > 
+		<li class="tab" ><a href="#display">Display Lucky Numbers</a></li>
+      </div>
+	  </ul>
+      
+	  <!------------- End of Tab display ----------------------------->
+      
+	  <div class="tab-content">
+      
+	  <!------------ Code to check if lucky number ------------------> 
+
+	  <div id="check" class="tab-pane fade in active">   
+
+	  <!------------ Code for form to enter Number ------------------>     
+	<div class="animated fadeIn" style="animation-delay:1s" >
+		
+	  <h1 style="font-weight:900">Check if Lucky number</h1>
+          </div>
+		  <div class="animated fadeInLeft"style="animation-delay:2s">
+          <form  id="form1">
+          <div class="field-wrap">
+		  <label>
+              Enter the Number <span class="req">(number)</span>
+            </label>
+            <input name="b1" type="value">
+			</form>
+          </div>
+			</div>
+		  <!----------- Code for form to enter Lucky number -------------->
+			<div class="animated fadeInRight"style="animation-delay:2s">
+		  <form  id="form2">
+          <br>
+		  <div class="field-wrap">
+            <label>
+              Enter the Lucky Number <span class="req">(number)</span>
+            </label>
+			<input name="b2" type="value">
+			</form>
+			</div>
+			<br>
+	</div>
+			<!----------- Submit button and display area -------------------->  
+			<div class="animated fadeInUp"style="animation-delay:2s">
+			<button class="button button-block" onclick="out()" data-toggle="modal" data-target="#myModal1" >
+			<div class="animated pulse" style="animation-delay:1.5s;animation-iteration-count: infinite;animation-duration: 2s" >Submit</div></button></div>
+			  
+			  
+			   <!-- Modal to display result -->
+		
+			  <div id="myModal1" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+		 <!-- Modal content -->
+
+		 
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="moving-zone">
+    <div class="popup">
+        <div class="popup-content">
+            <div class="popup-text">
+               <h3 id="demo"></h3>
+            </div>
+        
+    </div>
+</div>
+				</div>
+
+			</div>
+		</div>
+		<!---------End of modal------------------>
+			  			
+
+			  
+			  <!-- <div class='wrap'> -->
+  <!-- <div class='content'> -->
+    <!-- <h2>Rules</h2> -->
+	<!-- <h3>Lucky number : Sum of all digits of a number.<br><br> -->
+    <!-- <h4>Step-1 : Enter the number to which you want to find lucky number.<br><br> -->
+	<!-- Step-2 : Try to guess and Enter lucky number and click on submit button.<br><br> -->
+	<!-- Step-3 : Check your result in the popup window.</h4> -->
+  <!-- </div> -->
+<!-- </div> -->
+<!-- <a class='button glyphicon glyphicon-plus' href='#'></a> -->
+			  
+			  </div>
+        
+		<!------------ End of Checking -------------------------------->
+
+		<!------------ Code to display all lucky numbers--------------->
+
+        <div id="display" >   
+	<div class="animated fadeIn" style="animation-delay:1s" >
+		 <h1 style="font-weight:900">Display Lucky Numbers</h1>
+		</div>
+		 <!------------ Form to enter lower limit ---------------------->  
+				  <div class="animated fadeInLeft"style="animation-delay:2s">
+		 <form  id="form3">
+          <div class="field-wrap">
+		  <label>
+              Enter the Lower Limit <span class="req">(number)</span>
+            </label>
+            <input name="b3" type="value">
+			</form>
+          </div>
+		  </div>
+		<!------------ Form to enter Upper Limit ---------------------->  
+		   <div class="animated fadeInRight"style="animation-delay:2s">
+		  <form  id="form4">
+          <div class="field-wrap">
+		  <label>
+              Enter the Upper limit <span class="req">(number)</span>
+            </label>
+            <input name="b4" type="value">
+			</form>
+          </div>
+		  </div>
+		 <!------------ Form to enter the Lucky Number------------------> 
+		  		  <div class="animated fadeInLeft"style="animation-delay:2s">
+           <form  id="form5">
+          
+		  <div class="field-wrap">
+            <label>
+              Enter the Lucky Number <span class="req">(number)</span>
+            </label>
+			<input name="b5" type="value">
+			</form>
+			</div>
+			<br>
+	</div>
+		 <!------------ Submit button and display popup------------------->
+			<div class="animated fadeInUp"style="animation-delay:2.2s">
+              <button type="button" class="button button-block" onclick="cal()" data-toggle="modal" data-target="#myModal"   ><div class="animated pulse" style="animation-delay:1.5s;animation-iteration-count: infinite;animation-duration: 2s">Submit</div></button>
+			  </div>
+		
+		 <!-- Modal to display result -->
+		
+			  <div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+		 <!-- Modal content -->
+		 
+		<div class="animated bounceIn" style="animation-delay:0.2s">
+		 <div class="modal-content">
+				<!-- <div class="modal-header"> -->
+					<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+					<!-- <h4 class="modal-title">Number List</h4> -->
+				<!-- </div> -->
+			
+			<div class="modal-body">
+				<div class="animated pulse" style="animation-delay:0.2s;animation-duration: 5s;animation-iteration-count: infinite;"><p id="demo1"></p></div>
+			</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal" style="left:50%;    position:absolute;
+border-radius:50%">X</button>
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!---------End of modal------------------>
+			<!-- <div class='wrap'> -->
+  <!-- <div class='content'> -->
+    <!-- <h2>Rules</h2> -->
+    <!-- <h4>Step-1 : Enter the minimum number from which you want to check.<br><br> -->
+		<!-- Step-2 : Enter the maximum number till which you want to check.<br><br> -->
+		<!-- Step-3 : Enter the lucky number and click on Submit<br><br> -->
+		<!-- Step-4 : Now check all the numbers which are displayed in the popup</h4> -->
+  <!-- </div> -->
+<!-- </div> -->
+<!-- <a class='button glyphicon glyphicon-plus' href='#check'></a> -->
+        </div>
+		<!------------ End of code to display Lucky numbers------------------->
+		
+      </div>
+      
+</div>
+   <!-- </div>  -->
+   </div>
+		
+				  <!-- <div class='wrap'> -->
+  <!-- <div class='content'> -->
+    <!-- <h2>Rules</h2> -->
+	<!-- <h3>Lucky number : Sum of all digits of a number.<br><br> -->
+    <!-- <h4>Step-1 : Enter the number to which you want to find lucky number.<br><br> -->
+	<!-- Step-2 : Try to guess and Enter lucky number and click on submit button.<br><br> -->
+	<!-- Step-3 : Check your result in the popup window.</h4> -->
+  <!-- </div> -->
+<!-- </div> -->
+<!-- <a class='button glyphicon glyphicon-plus' href='#'></a> -->
+
+	</div>
+		
+      <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script>
+	$(function(){
+ var shrinkHeader = 300;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('.header').addClass('shrink');
+        }
+        else {
+            $('.header').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
+</script>
+
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/quietflow.min.js"></script>
+    <script type="text/javascript" src="js/index1.js"></script>
+    <script type="text/javascript" src="js/prism.js"></script>
+	 
+    <script src="js/index.js"></script>
+	<script src="js/text.js"></script>
+	<script src="js/text1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/pop.js"></script>
+	<script src="js/button.js"></script>
+	
+  </body>
+</html>
